@@ -1,0 +1,10 @@
+{
+  "main": "threejs/editor/index.html",
+  "name": "Three Editor",
+  "window":{
+      "resizable": true,
+      "min_width":800,
+      "min_height":400
+  }
+  
+}
