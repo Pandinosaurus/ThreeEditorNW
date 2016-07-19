@@ -17,7 +17,7 @@ Viewport.Info = function ( editor ) {
 	var objectsText = new UI.Text( '0' ).setMarginLeft( '6px' );
 	var verticesText = new UI.Text( '0' ).setMarginLeft( '6px' );
 	var trianglesText = new UI.Text( '0' ).setMarginLeft( '6px' );
-	var FireKeyText = new UI.Text( 'W, E, R, Ctrl-Z, Ctrl-Shift-Z, F12, Ctrl-R, Ctrl-Shift-I' ).setMarginLeft( '6px' );
+	var FireKeyText = new UI.Text( 'Ctrl-Z, Ctrl-Shift-Z, Ctrl-R, F12, Ctrl-Shift-I' ).setMarginLeft( '6px' );
 
 	container.add( new UI.Text( 'objects:' ), objectsText, new UI.Break() );
 	container.add( new UI.Text( 'vertices:' ), verticesText, new UI.Break() );

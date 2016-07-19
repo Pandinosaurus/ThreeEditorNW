@@ -3,7 +3,7 @@
   "name": "Three Editor",
   "window":{
       "resizable": true,
-      "min_width":800,
+      "min_width":850,
       "min_height":400
   }
   
