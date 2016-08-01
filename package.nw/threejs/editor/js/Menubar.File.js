@@ -26,7 +26,22 @@ Menubar.File = function ( editor ) {
 		if ( confirm( 'Any unsaved data will be lost. Are you sure?' ) ) {
 
 			editor.clear();
+            var fs = require('fs');
+var newImgArr = fs.readdirSync('projectImg');
+            newImgArr.forEach(function(item, i, newImgArr) {
+                
 
+              try{
+                                 fs.unlink('projectImg/'+item,function(err){
+        if(err) return console.log(err);
+        console.log('file deleted successfully');
+   }); 
+              }
+                catch(e){
+                    
+                }
+                
+});
 		}
 
 	} );
@@ -259,7 +274,28 @@ Menubar.File = function ( editor ) {
 			zip.file( 'js/VREffect.js', content );
 
 		} );
+        var fs = require('fs');
+       var imgArr =  fs.readdirSync('projectImg');
+       imgArr.forEach(function(item, i, arr) {
+      
+           try{
+        var content = fs.readFileSync('projectImg/'+item);
+      zip.file( 'projectIMG/'+item, content );
+ 
+               
+               
+               
+               
+       }
+                catch(err){
+                    
+                }
 
+
+		
+
+	
+       });
 	} );
 	options.add( option );
 

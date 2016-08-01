@@ -65,6 +65,24 @@ UI.Texture = function ( mapping ) {
 				}, false );
 
 				image.src = event.target.result;
+                       
+                var fs = require('fs');
+try{
+        fs.mkdirSync('projectImg');
+}
+                catch(e){
+                    
+                }
+                try{
+             fse.copy(file.path, 'projectImg/'+file.name, function (err) {
+  if (err) return console.error(err)
+  console.log("success!")
+
+});
+                }
+                catch(err){
+                    
+                }
 
 			}, false );
 
