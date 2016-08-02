@@ -20,7 +20,8 @@ var Toolbar = function ( editor ) {
 
 	} );
 	buttons.add( translate );
-
+    
+    
 	var rotate = new UI.Button( 'rotate ( e )' ).onClick( function () {
 
 		signals.transformModeChanged.dispatch( 'rotate' );
@@ -34,6 +35,13 @@ var Toolbar = function ( editor ) {
 
 	} );
 	buttons.add( scale );
+    
+    var line = new UI.Button( 'lineEditor' ).onClick( function () {
+
+		window.open('line.html');
+
+	} );
+	buttons.add( line );
 
 	// grid
 
