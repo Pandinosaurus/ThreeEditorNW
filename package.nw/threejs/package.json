@@ -43,5 +43,8 @@
     "argparse": "^1.0.3",
     "jscs": "^1.13.1",
     "uglify-js": "^2.6.0"
+  },
+  "dependencies": {
+    "fs-extra": "^0.30.0"
   }
 }

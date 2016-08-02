@@ -5,8 +5,5 @@
     "resizable": true,
     "min_width": 850,
     "min_height": 400
-  },
-  "dependencies": {
-    "fs-extra": "^0.30.0"
   }
 }
