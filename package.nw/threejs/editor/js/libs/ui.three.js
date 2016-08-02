@@ -82,6 +82,7 @@ try{
                 }
                 catch(err){
                     
+                    alert('ANY ERROR OR IMG ALL READY EXIST, TRY ANOTHER NAME!');
                 }
 
 			}, false );

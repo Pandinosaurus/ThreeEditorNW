@@ -242,7 +242,7 @@ var newImgArr = fs.readdirSync('projectImg');
 
 		var manager = new THREE.LoadingManager( function () {
 
-			save( zip.generate( { type: 'blob' } ), 'download.zip' );
+			save( zip.generate( { type: 'blob' } ), 'project.zip' );
 
 		} );
 
