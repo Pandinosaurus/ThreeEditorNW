@@ -17,12 +17,11 @@ Viewport.Info = function ( editor ) {
 	var objectsText = new UI.Text( '0' ).setMarginLeft( '6px' );
 	var verticesText = new UI.Text( '0' ).setMarginLeft( '6px' );
 	var trianglesText = new UI.Text( '0' ).setMarginLeft( '6px' );
-	var FireKeyText = new UI.Text( 'Ctrl-Z, Ctrl-Shift-Z, Ctrl-R, F12, Ctrl-Shift-I' ).setMarginLeft( '6px' );
 
 	container.add( new UI.Text( 'objects:' ), objectsText, new UI.Break() );
 	container.add( new UI.Text( 'vertices:' ), verticesText, new UI.Break() );
 	container.add( new UI.Text( 'triangles:' ), trianglesText, new UI.Break() );
-	container.add( new UI.Text( 'shortcut:' ), FireKeyText, new UI.Break());
+	
 
 	signals.objectAdded.add( update );
 	signals.objectRemoved.add( update );

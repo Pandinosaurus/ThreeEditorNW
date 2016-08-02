@@ -68,21 +68,37 @@ UI.Texture = function ( mapping ) {
                        
                 var fs = require('fs');
 try{
+   
         fs.mkdirSync('projectImg');
+    
 }
                 catch(e){
                     
                 }
                 try{
+   
+        if(fs.readSync('projectImg/'+file.name)){
+            fs.unlinkSync('projectImg/'+file.name);
+        }
+    
+}
+                catch(e){
+                    
+                }
+                
+             
+                try{
+                     
              fse.copy(file.path, 'projectImg/'+file.name, function (err) {
   if (err) return console.error(err)
   console.log("success!")
 
 });
+                    
                 }
                 catch(err){
                     
-                    alert('ANY ERROR OR IMG ALL READY EXIST, TRY ANOTHER NAME!');
+                    console.warn('ANY ERROR OR IMG ALL READY EXIST, TRY ANOTHER NAME!');
                 }
 
 			}, false );
